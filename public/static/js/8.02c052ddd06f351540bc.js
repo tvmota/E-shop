@@ -1,0 +1,2 @@
+webpackJsonp([8],{25:function(e,n,t){"use strict";Object.defineProperty(n,"__esModule",{value:!0});var a=t(77),r=t(78),i=t(2),s=i(a.a,r.a,!1,null,null,null);n.default=s.exports},77:function(e,n,t){"use strict";n.a={name:"Shop-Add"}},78:function(e,n,t){"use strict";var a=function(){var e=this,n=e.$createElement;return(e._self._c||n)("div",{staticClass:"container"},[e._v("\n  adicionar item\n")])},r=[],i={render:a,staticRenderFns:r};n.a=i}});
+//# sourceMappingURL=8.02c052ddd06f351540bc.js.map
