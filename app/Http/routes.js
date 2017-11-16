@@ -20,11 +20,35 @@ const Product = use('App/Model/Product')
 const User = use('App/Model/User')
 const Validator = use('Validator')
 const Hash = use('Hash')
+const Helpers = use('Helpers')
 
 Route.on('/').render('welcome')
 Route.post('login','AuthController.login')
 Route.post('check','AuthController.check')
 Route.resource('products','ProductController')
+/*Route.any('*', function * (req, res){
+  yield res.sendView('welcome')
+})*/
+
+Route.post('/upload', function * (req, res){
+  const img = req.file('img', {
+    maxSize: '2mb',
+    allowedExtensions: ['jpg', 'png', 'jpeg']
+  })
+  
+  const fileName = `teste.${img.extension()}`
+  yield img.move(Helpers.publicPath('uploads'), fileName)
+
+  console.log(`${Helpers.publicPath('uploads')}\/${fileName}`)
+
+  if(!img.moved()){
+    console.log(img.errors())
+    res.badRequest({errors: img.errors()})
+    return
+  }
+
+  res.ok({message: 'img upload'})
+})
 
 Route.get('/teste', function * (req, res){
   /*let product = new Product({

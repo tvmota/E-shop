@@ -1,0 +1,2 @@
+webpackJsonp([10],{45:function(t,e,n){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var s=n(66),r=n(67),a=n(10),i=a(s.a,r.a,!1,null,null,null);e.default=i.exports},66:function(t,e,n){"use strict";e.a={}},67:function(t,e,n){"use strict";var s=function(){var t=this,e=t.$createElement;return(t._self._c||e)("div",{staticClass:"container"},[t._v("\n  Vue.js // Twitter Bootstrap // Adonis.js\n")])},r=[],a={render:s,staticRenderFns:r};e.a=a}});
+//# sourceMappingURL=10.5a81d2386671bf1919e6.js.map
